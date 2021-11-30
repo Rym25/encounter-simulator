@@ -20,10 +20,10 @@ test('creates a monster object', () => {
 test('gets the modifier of a specific stat', () => {
     const monster = new Monster('Goblin', 7, 15, 30, 8, 14, 10, 10, 8, 8, 'Scimitar', 2);
 
-    expect(monster.getMod(str)).toBe(-1);
-    expect(monster.getMod(dex)).toBe(2);
-    expect(monster.getMod(con)).toBe(0);
-    expect(monster.getMod(int)).toBe(0);
-    expect(monster.getMod(wis)).toBe(-1);
-    expect(monster.getMod(cha)).toBe(-1);
+    expect(monster.getMods()).toHavePropert('strMod');
+    expect(monster.getMods()).toHavePropert('dexMod');
+    expect(monster.getMods()).toHavePropert('conMod');
+    expect(monster.getMods()).toHavePropert('intMod');
+    expect(monster.getMods()).toHavePropert('wisMod');
+    expect(monster.getMods()).toHavePropert('chaMod');
 });
