@@ -18,5 +18,8 @@
   "homepage": "https://github.com/Rym25/encounter-simulator#readme",
   "devDependencies": {
     "jest": "^27.3.1"
+  },
+  "dependencies": {
+    "inquirer": "^8.2.4"
   }
 }

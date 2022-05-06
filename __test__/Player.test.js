@@ -20,10 +20,13 @@ test('creates Player object', () => {
 test('gets the modifier of a specific stat', () => {
     const player = new Player('Randy', 12, 16, 30, 16, 13, 14, 9, 15, 11, 'Greataxe', 2);
 
-    expect(player.getMods()).toHavePropert('strMod');
-    expect(player.getMods()).toHavePropert('dexMod');
-    expect(player.getMods()).toHavePropert('conMod');
-    expect(player.getMods()).toHavePropert('intMod');
-    expect(player.getMods()).toHavePropert('wisMod');
-    expect(player.getMods()).toHavePropert('chaMod');
+    expect(player.getMods()).toHaveProperty('strMod');
+    expect(player.getMods()).toHaveProperty('dexMod');
+    expect(player.getMods()).toHaveProperty('conMod');
+    expect(player.getMods()).toHaveProperty('intMod');
+    expect(player.getMods()).toHaveProperty('wisMod');
+    expect(player.getMods()).toHaveProperty('chaMod');
+    expect(player.getMods()).toHaveProperty('hp');
+    expect(player.getMods()).toHaveProperty('ac');
+    expect(player.getMods()).toHaveProperty('prof');
 });
